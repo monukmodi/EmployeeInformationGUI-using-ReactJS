@@ -1,0 +1,168 @@
+.EmailColSetup{
+    background-color: #e60000;
+    border: 5px solid #e60000;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.AnotherEmailColSetup{
+    background-color: whitesmoke;
+    border: 5px solid whitesmoke;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+
+.contentcenter{
+    text-align: center;
+    /* border: 1px solid yellow; */
+    margin-top: 1rem;
+    color: white;
+}
+.contentcenterimage{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
+    .contentcenter{
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* .gmail{
+    border:2rem solid green;
+    background-color: green;
+    border-radius: 1rem;
+    width: 100%;
+    height: 70%;
+}
+.msoffice{
+    border:2rem solid #e60000;
+    background-color: #e60000;
+    border-radius: 1rem;  
+    width: 100%;
+    height: 70%;
+}
+.HelloCenter{
+   text-align: center;
+}
+.anotherdevice{
+    border:2rem solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 1rem;  
+    width: 100%;
+    height: 70%;
+}
+.emailsetuphead{
+    margin-top: "1rem";
+}
+.gmailimage{
+    width: 50%;
+}
+.msofficeimage{
+    width: 50%;
+}
+.anotherdeviceimage{
+    width: 50%;
+}
+.imagespecs
+{
+    position: relative;
+    margin: 0px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Gmailcontentdesk{
+    text-align: center;
+}
+.Gmailcontent{
+    display: none;
+}
+.msofficecontentdesk{
+    text-align: center;
+}
+.msofficecontent{
+   display: none; 
+}
+.anothercontentdesk{
+    text-align: center; 
+}
+.anothercontent{
+    display: none; 
+}
+.gmailimagedesktop{
+    text-align: center; 
+}
+.gmailimagecontent{
+    display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    
+    .gmailimagedesktop{
+        display: none;
+    }
+    .gmailimagecontent{
+        text-align: center;
+        display: inline;
+    }
+    .Gmailcontentdesk{
+        display: none;
+    }
+    .Gmailcontent{
+        text-align: center;
+        display: inline
+    }
+    .msofficecontentdesk{
+        display: none;
+    }
+    .msofficecontent{
+        text-align: center;
+        display: inline
+    }
+    .anothercontentdesk{
+        display: none;
+    }
+    .anothercontent{
+        text-align: center;
+        display: inline 
+    }
+    .gmail{
+        /* width: 60%;
+        height: 60%; */
+        /* text-align: center;
+        display: inline-block;
+    }
+    .msoffice{
+        width: 60%;
+        height: 60%;
+        display: inline-block;
+    }
+    .anotherdevice{
+        width: 60%;
+        height: 60%;
+        display: inline-block;
+    }
+    .gmailimage{
+        width: 30%;
+    }
+    .msofficeimage{
+        width: 30%;
+    }
+    .anotherdeviceimage{
+        width: 30%;
+    }
+    /* .emailsetupcenter{
+        text-align: center;
+    } */
+    /* .emailsetuphead{
+        text-align: center;
+    } */
+
+    
+    /* } */
