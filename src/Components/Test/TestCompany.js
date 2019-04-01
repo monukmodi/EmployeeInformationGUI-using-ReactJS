@@ -6,7 +6,7 @@ export default class TestForm extends Component {
         return (
             <div>
 
-            <h5>Company Info</h5>
+            <h3>Company Info</h3>
                 <form>
                 <div className="">
                         <div class="form-group">

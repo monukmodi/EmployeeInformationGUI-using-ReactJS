@@ -5,7 +5,7 @@ export default class TestForm extends Component {
     return (
       <div>
 
-        <h5>Personal Info</h5>
+        <h3>Personal Info</h3>
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">

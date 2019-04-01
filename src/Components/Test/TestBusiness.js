@@ -13,7 +13,7 @@ export default class TestBusiness extends Component {
     render() {
         return (
             <div>
-                <h5>Business Hours</h5>
+                <h3>Business Hours</h3>
                 
              
              {this.state.data.map(week =>{
