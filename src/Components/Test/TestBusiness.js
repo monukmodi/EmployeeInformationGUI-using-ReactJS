@@ -21,31 +21,18 @@ export default class TestBusiness extends Component {
                     <form >
                    <div style={{marginTop:"1rem"}} className="row ">
                        <div className="col-md-3">
+        
                        <label htmlFor="">{week.day}</label>
                        </div>
                        <div className="col">   
                             <input style={{marginRight:"2.5rem"}} type="time"/>
                             <input type="time"/>
                        </div>
-                       
-                   
                    </div>
                    </form>
                    )
               })}
-{/*             
-             <button
-                    type="submit"
-                    className="btn btn-primary"
-                  >
-                    Previous
-                  </button>    
-                  <button
-                    type="submit"
-                    className="btn btn-primary"
-                  >
-                    Next
-                  </button>          */}
+              <button type="submit" class="btn btn-primary testcompany" onClick={this.props.tabfour}>Next</button>
             </div>
         )
     }

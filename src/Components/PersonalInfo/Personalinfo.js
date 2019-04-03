@@ -9,11 +9,13 @@ import CompanyUserInfo from '../UserProfile/Companyinfoprofile';
 import BusinessuserInfo from '../UserProfile/Businessinfoprofile';
 import EmailuserInfo from '../UserProfile/Emailinfoprofile';
 export default class Personalinfo extends Component {
+  
   state = {
     toggle1 : true,
     toggle2 : false,
     toggle3 : false,
-    toggle4 : false
+    toggle4 : false,
+    data : []
   }
   tabone = () => {
     this.setState({   
@@ -47,9 +49,21 @@ export default class Personalinfo extends Component {
       toggle4 : true
     })
   }
+  getData=(data)=>{
+    
+    let todos = [...this.state.data,data]
+    this.setState({
+      data:todos
+    })
+    
+  }
+  handleClick = () =>{
+    console.log("hey")
+  }
   render() {
+    // console.log("test",this.state.data)
+    // console.log("name==",this.state.data.fname)
     return (
-      <div>
         <div >
         <div className="centerform ">
         <div className="row m-0">
@@ -79,16 +93,17 @@ export default class Personalinfo extends Component {
                   </div>
                 </div> 
                 <div className="personaluserinfo">
-                {this.state.toggle1 ? <PersonalUserInfo /> : null}  
+                {/* <PersonalUserInfo uerdetail={this.state.data}/> */}
+                {this.state.toggle1 ? <PersonalUserInfo uerdetail={this.state.data} /> : null}
                 {this.state.toggle2 ? <CompanyUserInfo /> : null}
                 {this.state.toggle3 ? <BusinessuserInfo /> : null}
                 {this.state.toggle4 ? <EmailuserInfo /> : null}
                 </div>               
             </div>
             <div className="col-md-8 order-md-1">
-            {this.state.toggle1 ? <TestForm /> : null}
-            {this.state.toggle2 ? <TestCompany /> : null}
-            {this.state.toggle3 ? <TestBusiness /> : null}
+            {this.state.toggle1 ? <TestForm getData={this.getData} tabtwo={this.tabtwo}/> : null}
+            {this.state.toggle2 ? <TestCompany tabthree={this.tabthree} /> : null}
+            {this.state.toggle3 ? <TestBusiness tabfour={this.tabfour} /> : null}
             {this.state.toggle4 ? <TestEmailSetup /> : null}
             </div>
 
@@ -96,7 +111,7 @@ export default class Personalinfo extends Component {
         </div>
         </div>
       </div>
-      </div>
+      
     )
   }
 }

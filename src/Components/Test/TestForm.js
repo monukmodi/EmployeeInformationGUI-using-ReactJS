@@ -1,35 +1,47 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class TestForm extends Component {
+  state={
+    fname:'', lname:'', email:'', phone:'', address:''
+  }
+  handleChange = (e) =>{
+    this.setState({
+     [e.target.name]:e.target.value
+    }) 
+  }
+  handleSubmit = (e) =>{
+    e.preventDefault();
+    this.props.getData(this.state)
+  }
   render() {
     return (
       <div>
-
         <h3>Personal Info</h3>
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputfname">First Name</label>
-              <input type="text" class="form-control" id="inputfname1" placeholder="Jhon" />
+        <form onSubmit={this.handleSubmit}>
+          <div className="form-row">
+            <div className="form-group col-md-6">
+              <label >First Name</label>
+              <input type="text"  className="form-control" name="fname" placeholder="Jhon"  onChange={this.handleChange}  />
             </div>
-            <div class="form-group col-md-6">
-              <label for="inputlname">Last Name</label>
-              <input type="password" class="form-control" id="inputlname1" placeholder="Doe" />
+            <div className="form-group col-md-6">
+              <label >Last Name</label>
+              <input type="text"  className="form-control" name="lname" placeholder="Doe"  onChange={this.handleChange}  />
             </div>
           </div>
-          <div class="form-group">
-            <label for="inputemail">Email</label>
-            <input type="email" class="form-control" id="inputemail1" placeholder="Jhon@xyz.com" />
+          <div className="form-group">
+            <label >Email</label>
+            <input type="email" className="form-control" name="email" placeholder="Jhon@xyz.com" onChange={this.handleChange} />
           </div>
-          <div class="form-group">
-            <label for="inputphone">Phone</label>
-            <input type="text" class="form-control" id="inputphone1" placeholder="9876543210" />
+          <div className="form-group">
+            <label >Phone</label>
+            <input type="text"  className="form-control" name="phone" placeholder="9876543210" onChange={this.handleChange} />
           </div>
-          <div class="form-group">
-            <label for="inputadd">Where are You From ?</label>
-            <input type="text" class="form-control" id="inputadd1" placeholder="India" />
+          <div className="form-group">
+            <label >Where are You From ?</label>
+            <input type="text"  className="form-control" name="address" placeholder="India" onChange={this.handleChange} />
           </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" className="btn btn-primary" onClick={this.props.tabtwo}>Next</button>
+          {/* <button onClick={this.props.tabtwo} >Click Here</button> */}
         </form>
       </div>
     )

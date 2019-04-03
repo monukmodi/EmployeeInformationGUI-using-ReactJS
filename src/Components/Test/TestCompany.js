@@ -27,7 +27,7 @@ export default class TestForm extends Component {
                         <label for="inputCposition">Your Position in Company:</label>
                         <input type="text" class="form-control" id="inputCposition1" placeholder="Nvest" />
                     </div>
-                    <button type="submit" class="btn btn-primary testcompany">Sign in</button>
+                    <button type="submit" class="btn btn-primary testcompany" onClick={this.props.tabthree}>Next</button>
                 </form>
             </div>
         )
