@@ -91,14 +91,14 @@ export default class Personalinfo extends Component {
               <div className="personaluserinfo">
                 {/* <PersonalUserInfo uerdetail={this.state.data}/> */}
                 {this.state.toggle1 ? <PersonalUserInfo userdetail={this.state.data} /> : null}
-                {this.state.toggle2 ? <CompanyUserInfo /> : null}
+                {this.state.toggle2 ? <CompanyUserInfo companydetail={this.state.data}/> : null}
                 {this.state.toggle3 ? <BusinessuserInfo /> : null}
                 {this.state.toggle4 ? <EmailuserInfo /> : null}
               </div>
             </div>
             <div className="col-md-8 order-md-1">
               {this.state.toggle1 ? <TestForm getData={this.getData} tabtwo={this.tabtwo} /> : null}
-              {this.state.toggle2 ? <TestCompany tabthree={this.tabthree} /> : null}
+              {this.state.toggle2 ? <TestCompany getData={this.getData} tabthree={this.tabthree} /> : null}
               {this.state.toggle3 ? <TestBusiness tabfour={this.tabfour} /> : null}
               {this.state.toggle4 ? <TestEmailSetup /> : null}
             </div>

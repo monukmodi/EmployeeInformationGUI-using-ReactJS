@@ -3,6 +3,7 @@ import Companyprofileinfo from '../UserProfile/images/companyInfo.svg';
 import './Companyinfoprofile.css'
 export default class Companyinfoprofile extends Component {
     render() {
+        console.log(this.props.companydetail)
         return (
             <div className="showcompanyinfo">
                 <div className="row m-0">
@@ -10,7 +11,17 @@ export default class Companyinfoprofile extends Component {
                     <div className="col">
                         <div style={{ textAlign: "center", marginTop: "4rem" }}>
                             <img style={{ width: "50%", textAlign: "center" }} src={Companyprofileinfo} alt="" />
-                            <h5 >Company Info</h5>
+                            
+
+                        {this.props.companydetail.map(cdetail =>{
+                            return(
+                                <h5>{cdetail.Cname}</h5>
+                            )
+                        })}
+
+
+
+
                             <p>Fill out the form in the Left. You can always edit the data.</p>
                         </div>
                     </div>
