@@ -4,7 +4,7 @@ import UserInfoimage from './images/personalUser.svg';
 export default class PersonalUserInfo extends Component {
  
   render() {
-    console.log(this.props.uerdetail)
+    console.log(this.props.userdetail)
 
     return (
       <div>
@@ -15,9 +15,10 @@ export default class PersonalUserInfo extends Component {
 
           <div className="col">
             <div style={{textAlign:"center", marginTop:"4rem"}}>
-                <img style={{width:"50%", textAlign:"center"}} src={UserInfoimage} />
+                <img style={{width:"50%", textAlign:"center"}} src={UserInfoimage} alt="" />
+                {/* <h5 >{this.state.userdetail[0].fname}</h5> */}
 
-                {this.props.uerdetail.map(userr =>{
+                {this.props.userdetail.map(userr =>{
           return(
                 <h5 >{userr.fname}</h5>
                 )

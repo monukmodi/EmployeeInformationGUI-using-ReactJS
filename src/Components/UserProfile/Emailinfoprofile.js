@@ -9,7 +9,7 @@ export default class Emailinfoprofile extends Component {
 
           <div className="col">
             <div style={{ textAlign: "center", marginTop: "4rem" }}>
-              <img style={{ width: "50%", textAlign: "center" }} src={Emailinfoimage} />
+              <img style={{ width: "50%", textAlign: "center" }} src={Emailinfoimage} alt="" />
               <h5 >Email Info</h5>
               <p>Fill out the form in the Left. You can always edit the data.</p>
             </div>

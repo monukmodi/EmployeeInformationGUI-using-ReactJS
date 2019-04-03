@@ -15,7 +15,7 @@ export default class EmailSetup extends Component {
                     <div className="col-md-4 ">
                         <div className="EmailColSetup">
                             <div className="contentcenterimage">
-                                <img src={Gplus} style={{ width: "35%" }} />
+                                <img src={Gplus} style={{ width: "35%" }} alt="" />
                             </div>
                             <div className="contentcenter">
                                 <h5 >Using Gmail</h5>
@@ -25,7 +25,7 @@ export default class EmailSetup extends Component {
                     <div className="col-md-4 ">
                         <div className="EmailColSetup">
                             <div className="contentcenterimage">
-                                <img src={MsOffice} style={{ width: "35%" }} />
+                                <img src={MsOffice} style={{ width: "35%" }} alt="" />
                             </div>
                             <div className="contentcenter">
                                 <h5>Using MsOffice</h5>
@@ -35,7 +35,7 @@ export default class EmailSetup extends Component {
                     <div className="col-md-4 ">
                         <div className="AnotherEmailColSetup">
                             <div className="contentcenterimage">
-                                <img src={Question} style={{ width: "35%" }} />
+                                <img src={Question} style={{ width: "35%" }} alt="" />
                             </div>
                             <div className="contentcenter">
                                 <h5>Using Device</h5>
