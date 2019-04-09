@@ -21,11 +21,11 @@ export default class TestForm extends Component {
           <div className="form-row">
             <div className="form-group col-md-6">
               <label >First Name</label>
-              <input type="text"  className="form-control" name="fname" placeholder="Jhon"  onChange={this.handleChange}  />
+              <input type="text"  className="form-control" name="fname" placeholder="Sushil"  onChange={this.handleChange}  />
             </div>
             <div className="form-group col-md-6">
               <label >Last Name</label>
-              <input type="text"  className="form-control" name="lname" placeholder="Doe"  onChange={this.handleChange}  />
+              <input type="text"  className="form-control" name="lname" placeholder="Sharma"  onChange={this.handleChange}  />
             </div>
           </div>
           <div className="form-group">
